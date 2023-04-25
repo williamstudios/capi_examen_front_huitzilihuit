@@ -6,7 +6,8 @@ import { AppComponent } from './app.component';
 import { RouterModule, Routes } from '@angular/router';
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
-import { TablaUsuariosComponent } from './usuarios/tabla-usuarios/tabla-usuarios.component';
+import { CommonModule } from '@angular/common';
+import { TablaUsuariosComponent } from './tabla-usuarios/tabla-usuarios.component';
 const appRoutes:Routes=[
   {
     path:'', component:TablaUsuariosComponent
@@ -19,8 +20,10 @@ const appRoutes:Routes=[
 @NgModule({
   declarations: [
     AppComponent,
+    TablaUsuariosComponent,
   ],
   imports: [
+    CommonModule,
     BrowserModule,
     AppRoutingModule,
     FormsModule,

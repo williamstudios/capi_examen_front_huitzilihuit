@@ -1,8 +1,8 @@
 import { Component, OnInit } from '@angular/core';
-
+//import { AppModule } from '../app.module';
 import { Observable } from 'rxjs';
 import { RequestServiceService } from 'src/app/request-service.service';
-
+import { CommonModule } from '@angular/common';
 @Component({
   selector: 'app-tabla-usuarios',
   templateUrl: './tabla-usuarios.component.html',
